@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание к 11 и 12 уроку</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dws-wrapper">
+	<h3>Ежедневник</h3>
+	<form name="dwsForm">
+		<label>День недели:</label>
+		<select name="days">
+			<option>Понедельник</option>
+			<option>Вторник</option>
+			<option>Среда</option>
+			<option>Четверг</option>
+			<option>Пятница</option>
+			<option>Суббота</option>
+			<option>Воскресенье</option>
+		</select><br><br>
+		<textarea rows="5" cols="45" name="message" placeholder="Напишите текст заметки..." ></textarea><br>
+		<input type="button" value="Отправить" onClick="btnClick();">
+		<input type="button" value="Распечатать" onClick="prClick();">
+	</form>
+	<br>
+	<div id="diary"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

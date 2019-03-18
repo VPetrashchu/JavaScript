@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання/щоденник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dws-wrapper">
+    <h3>Щоденник</h3>
+    <form name="dwsForm">
+        <label>День неділі:</label>
+        <select name="days">
+            <option>Понеділок</option>
+            <option>Вівторок</option>
+            <option>Середа</option>
+            <option>Четвер</option>
+            <option>П'ятниця</option>
+            <option>Субота</option>
+            <option>Неділя</option>
+        </select><br><br>
+        <textarea name="message" cols="45" ropws="5" placeholder="Напиши текст нотатки..."></textarea><br>
+        <input type="button" value="Відправити" onclick="btnClick();">
+        <input type="button" value="Роздруккувати" onclick="prClick();">
+    </form>
+    <div id='diary'></div>
+    <br>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
